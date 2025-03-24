@@ -1,0 +1,121 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #4c67ff, #9b6eff);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+/* Hidden class */
+.hidden {
+    display: none;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    background: #ffcc00;
+    color: #333;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:hover {
+    background: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Links */
+a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Timer Styling */
+#timer {
+    font-size: 18px;
+    font-weight: bold;
+    background: #ff4444;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    animation: blink 1s infinite alternate;
+}
+
+/* Blink animation for timer */
+@keyframes blink {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.6;
+    }
+}
+
+/* Quiz Form */
+#quizForm p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+input[type="radio"] {
+    margin: 10px;
+    transform: scale(1.2);
+    accent-color: #ffcc00;
+}
+
+/* Results Styling */
+#resultPage {
+    font-size: 22px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
